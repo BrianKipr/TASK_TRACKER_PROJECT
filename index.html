@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h2>Task Tracker</h2>
+  <div class="input-section">
+    <label for="category-select">Category:</label>
+    <select id="category-select">
+      <option value="task">Task</option>
+      <option value="meeting">Meeting</option>
+      <option value="deadline">Deadline</option>
+      <option value="follow-up">Follow-up</option>
+    </select>
+    <label for="description-input">Description:</label>
+    <input type="text" id="description-input">
+    <label for="date-input">Due Date:</label>
+    <input type="date" id="date-input">
+    <button id="add-btn">Add Task</button>
+  </div>
+  <div class="task-list">
+    <h2>Task List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Description</th>
+          <th>Due Date</th>
+          
+        </tr>
+      </thead>
+      <tbody id="task-table-body">
+      </tbody>
+    </table>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+/* /* body {
+font-family: arial, sans-serif;
+margin: 0;
+} */
+
+h1, h2 {
+    text-align: center;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.input-section label {
+    font-weight: bold;
+    margin-right: 10px;
+
+}
+
+.input-section input[type="number"], .input-section input[type="date"]{
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.input-section button {
+    padding: 5px 10px;
+    background-color: chartreuse;
+    color: aliceblue;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.expense-list{
+    margin: 20;
+}
+
+table {
+    width: 100;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(33, 169, 33);
+    color: aliceblue;
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  h2, h2 {
+    text-align: center;
+  }
+  
+  .input-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .input-section label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .input-section input[type="number"],
+  .input-section input[type="date"] {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .input-section button {
+    padding: 5px 10px;
+    background-color: chartreuse;
+    color: aliceblue;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .task-list {
+    margin: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: rgb(33, 169, 33);
+    color: aliceblue;
+  }
+  
+  .delete-btn {
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+th {
+    border: 1px solid black;
+}
+
+body{
+    background-image: url(/images/nature.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
