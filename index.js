@@ -12,7 +12,7 @@ function fetchTasks() {
       tasks.forEach(task => {
         const row = document.createElement('tr');
 
-        // Create table cells for category, description, due date, and delete button
+        // Table cells for category, description, due date, and delete button
         const categoryCell = document.createElement('td');
         categoryCell.textContent = task.category;
         row.appendChild(categoryCell);
@@ -31,7 +31,8 @@ function fetchTasks() {
         deleteButton.addEventListener('click', () => {
           deleteTask(task.id);
         });
-        deleteButton.classList.add('delete-btn'); // Add delete-btn class to the button
+        // Add delete-btn class to the button
+        deleteButton.classList.add('delete-btn'); 
         deleteCell.appendChild(deleteButton);
         row.appendChild(deleteCell);
 
@@ -51,7 +52,7 @@ function deleteTask(taskId) {
   })
     .then(response => {
       if (response.ok) {
-        // Task deleted successfully, fetch tasks again to update the list
+        // Task deleted ,fetch tasks again to updates the list
         fetchTasks();
       } else {
         console.log('Failed to delete task');
@@ -62,7 +63,7 @@ function deleteTask(taskId) {
     });
 }
 
-// Function to add a new task
+/// Function to add a new tasks
 function addTask() {
   const categorySelect = document.getElementById('category-select');
   const descriptionInput = document.getElementById('description-input');
@@ -83,9 +84,9 @@ function addTask() {
   })
     .then(response => {
       if (response.ok) {
-        // Task added successfully, fetch tasks again to update the list
+        
         fetchTasks();
-        // Clear input fields
+        // Clearing inputs
         descriptionInput.value = '';
         dateInput.value = '';
       } else {
