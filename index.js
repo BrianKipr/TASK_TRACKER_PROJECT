@@ -25,7 +25,7 @@
           dueDateCell.textContent = task.dueDate;
           row.appendChild(dueDateCell);
 
-          const editCell = document.createElement('td');
+          //const editCell = document.createElement('td');
           const editButton = document.createElement('button');
           editButton.textContent = 'Edit';
           editButton.addEventListener('click', () => {
