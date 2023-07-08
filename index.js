@@ -36,8 +36,8 @@
           editCell.appendChild(editButton);
           row.appendChild(editCell);
 
-          // const deleteCell = document.createElement('td');
-          // const deleteButton = document.createElement('button');
+          const deleteCell = document.createElement('td');
+          const deleteButton = document.createElement('button');
           deleteButton.textContent = 'Delete';
           deleteButton.addEventListener('click', () => {
             deleteTask(task.id);
