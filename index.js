@@ -25,7 +25,7 @@
           dueDateCell.textContent = task.dueDate;
           row.appendChild(dueDateCell);
 
-          //const editCell = document.createElement('td');
+          const editCell = document.createElement('td');
           const editButton = document.createElement('button');
           editButton.textContent = 'Edit';
           editButton.addEventListener('click', () => {
@@ -36,8 +36,8 @@
           editCell.appendChild(editButton);
           row.appendChild(editCell);
 
-          const deleteCell = document.createElement('td');
-          const deleteButton = document.createElement('button');
+          // const deleteCell = document.createElement('td');
+          // const deleteButton = document.createElement('button');
           deleteButton.textContent = 'Delete';
           deleteButton.addEventListener('click', () => {
             deleteTask(task.id);
