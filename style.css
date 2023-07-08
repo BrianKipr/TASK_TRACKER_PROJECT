@@ -73,13 +73,13 @@ body {
     text-align: center;
   }
   
-  /* .input-section {
+  .input-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-  } */
+  }
   
   .input-section label {
     font-weight: bold;
