@@ -57,22 +57,22 @@
   }
 
   // Function to delete a task
-  // function deleteTask(taskId) {
-  //   fetch(`http://localhost:3000/tasks/${taskId}`, {
-  //     method: 'DELETE'
-  //   })
-  //     .then(response => {
-  //       if (response.ok) {
-  //         // Task deleted successfully, fetch tasks again to update the list
-  //         fetchTasks();
-  //       } else {
-  //         console.log('Failed to delete task');
-  //       }
-  //     })
-  //     .catch(error => {
-  //       console.log('Error deleting task:', error);
-  //     });
-  // }
+  function deleteTask(taskId) {
+    fetch(`http://localhost:3000/tasks/${taskId}`, {
+      method: 'DELETE'
+    })
+      .then(response => {
+        if (response.ok) {
+          // Task deleted successfully, fetch tasks again to update the list
+          fetchTasks();
+        } else {
+          console.log('Failed to delete task');
+        }
+      })
+      .catch(error => {
+        console.log('Error deleting task:', error);
+      });
+  }
 
   // Function to edit a task
   function editTask(taskId, currentCategory, currentDescription, currentDueDate) {
